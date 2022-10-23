@@ -1,0 +1,35 @@
+public class Main {
+
+    public static void main(String[] args){
+                int resultado;
+                resultado = suma(13, 19, 3);
+                System.out.println(resultado);
+    }
+
+    public static int suma(int a, int b, int c){
+        return (a + b +c);
+    }
+}
+
+
+ 
+
+public class Main {
+
+    public static void main(String[] args){
+                Coche miCoche = new Coche();
+                miCoche.aumentarPuerta();
+                miCoche.aumentarPuerta();
+                miCoche.aumentarPuerta();
+                miCoche.aumentarPuerta();
+                System.out.println(miCoche.aumentarPuerta);
+    }
+}
+
+class Coche{
+    public int aumentarPuerta = 0;
+
+    public void aumentarPuerta(){
+        this.aumentarPuerta++;
+    }
+}
