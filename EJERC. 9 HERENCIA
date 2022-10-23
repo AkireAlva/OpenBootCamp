@@ -1,0 +1,80 @@
+public class Main {
+
+    public static void main(String[] args){
+        Cliente micliente = new Cliente();
+        Trabajador mitrabajador = new Trabajador();
+
+
+        micliente.setEdad(15);
+        micliente.setNombre("Erika");
+        micliente.setTelefono(55);
+        micliente.setCredito(500);
+        mitrabajador.setSalario(1500);
+
+        System.out.println(micliente.getEdad());
+        System.out.println(micliente.getNombre());
+        System.out.println(micliente.getTelefono());
+        System.out.println(micliente.getCredito());
+        System.out.println(mitrabajador.getSalario());
+
+
+    }
+}
+
+class Persona{
+    int edad;
+    String nombre;
+    int telefono;
+
+    public void setEdad(int edad){
+        this.edad = edad;
+    }
+
+    public int getEdad(){
+        return this.edad = edad;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    public String getNombre(){
+        return this.nombre = nombre;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+    public int getTelefono(){
+        return this.telefono = telefono;
+    }
+
+}
+
+class Cliente extends Persona{
+    int credito;
+
+    public void setCredito(int credito){
+        this.credito = credito;
+    }
+
+    public int getCredito(){
+        return this.credito = credito;
+    }
+
+}
+
+
+
+class Trabajador extends Persona{
+    int salario;
+
+    public void setSalario(int salario){
+        this.salario = salario;
+    }
+
+    public int getSalario(){
+        return this.salario = salario;
+    }
+
+}
